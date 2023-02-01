@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">0
    <title>EDC | NITD</title>
     <link rel="icon" type="image/png" href="./images/favicon.png"> <!--helps to display icon in the tab of the page with title-->
     
@@ -10,6 +11,25 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
   rel="stylesheet">
     <link rel="stylesheet" href="index-style.css"> <!--To link css stylesheet to webpage-->
+    <style>
+        @media (max-width:300px){
+            #box-1{display: block;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px){
+            #box-2{display: block;}
+        }
+
+        @media (min-width:300px)and (max-width:800px){
+            #box-3{display: block;}
+        }
+
+        @media (min-width:800px){
+            #box-3{display: block;}
+        }
+    
+    </style>
 </head>
 <body>
 <!--Section : used to create separate sections of the webpage, Div: used to create different divisions in a section-->
@@ -106,8 +126,9 @@
         </center>
     </h5>
 </div>
-</section>
 </div>
+</section>
+
 
 <div class="footer-index">
 

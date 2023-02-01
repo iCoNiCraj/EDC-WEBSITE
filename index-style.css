@@ -2,7 +2,9 @@ html{
     scroll-behavior: smooth;
     /* overflow: hidden; */ /* TO REMOVE THE EXTRA WHITESPACE*/
   }
+
   body{
+    @media only screen and (max-width: 760px)
     width: 100%;
     height:100%;
     margin:0;
@@ -21,7 +23,7 @@ html{
     background-image: url('./images/backgroundSectionHome.jpeg');
     background-size: cover;
     /* opacity:0.5; */ /* FOR MAKING BACKGROUND TRANSPARENT*/
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
   }
 
   
@@ -209,62 +211,84 @@ html{
   }
 
   .about-section{
-    height: 40rem;
+    /*height: 40rem;*/
     margin-top: 1%;
-    width: auto;
-    position: relative; /* PARENT HAS POSITION - RELATIVE AND ITS CHILD ARE SET TO POSITION ABSOLUTE BEACUSE WITH RESPECT TO PARENT POSITION , ITS CHILD SHOULD BE PLACED*/
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* PARENT HAS POSITION - RELATIVE AND ITS CHILD ARE SET TO POSITION ABSOLUTE BEACUSE WITH RESPECT TO PARENT POSITION , ITS CHILD SHOULD BE PLACED*/
     background-image: url("./images/OIP2.jpeg");
     background-size: cover;
     /* opacity:0.5; */ /* FOR MAKING BACKGROUND TRANSPARENT*/
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
   }
   .abt
   {
-    position:absolute;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top:2.9rem;
-    margin-left:125px;
-    height :300px;
-    width :1250px ;
-    border-radius: 1%;
+    /*margin-left:125px;*/
+
+    /*height :300px;*/
+    width :100% ;
+    border-radius: 8%;
+    /*overflow: auto;
+    white-space: nowrap;*/
   }
   .sub1
   {
-    position:absolute;
-    height :250px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+   /* height :250px;
     margin-left: 15px;
     margin-top: 30px;
-    width :400px ;
-    padding: 5px;
-    border-radius: 1%;
+    width :20% ;
+    padding: 5px;*/
+    width: 20%;
+    border-radius: 8%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.631);
     background-color: rgb(248, 251, 251);
+    min-width: 200px;
   }
   .sub2
   {
-    position:absolute;
-    height :250px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    /*height :250px;
     margin-top: 30px;
-    margin-left: 430px;
-    width :400px ;
-    padding: 5px;
-    border-radius: 1%;
+    margin-left: 433px;
+    width :20% ;
+    padding: 5px;*/
+    width: 20%;
+    border-radius: 8%;
     box-shadow:5px 5px 5px rgba(0, 0, 0, 0.632);
     /* background-color: rgb(214, 86, 54); */
     background-color: rgb(250, 252, 252);
+    min-width: 200px;
   }
+
   .sub3
   {
-    position:absolute;
-    height :250px;
-    width :400px ;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    /*height :250px;
+    width :20% ;
     padding: 5px;
     margin-left: 850px;
-    margin-top: 30px;
-    border-radius: 1%;
+    margin-top: 30px;*/
+    border-radius: 8%;
+    width: 20%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.604);
     /* background-color: rgb(214, 86, 54); */
 
     background-color: rgb(252, 253, 253);
+    min-width: 200px;
   }
   .IIC
   {
